@@ -4,7 +4,6 @@
 
 @section("content")
     <section id="products">
-        {{-- <img src=" {{ asset("images/bg-main.jpg")}} " alt=""> --}}
         <div class="container">
             <h1>Lista dei prodotti</h1>
 

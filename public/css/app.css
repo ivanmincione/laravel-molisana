@@ -15,7 +15,7 @@ body {
 
 h1 {
   text-align: center;
-  margin: 40px 0;
+  padding: 40px 0;
 }
 
 ul {
@@ -30,6 +30,7 @@ a {
 header {
   text-align: center;
   padding-top: 40px;
+  margin-bottom: 20px;
 }
 
 header .menu-header {
@@ -57,7 +58,7 @@ header .menu-header ul li a:hover {
 }
 
 #products {
-  background-image: image("../../public/images/bg-main.jpg ");
+  background-image: url("/images/bg-main.jpg");
 }
 
 .box-card {

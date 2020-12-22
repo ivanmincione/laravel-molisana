@@ -1,8 +1,7 @@
 #products{
-    background-image: image("../../public/images/bg-main.jpg ");
+    background-image: url("/images/bg-main.jpg");
+    
 }
-
-
 
 .box-card{
     @include flex-center;
