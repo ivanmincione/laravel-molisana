@@ -1,0 +1,28 @@
+footer{
+    margin-top: $spacing * 2;
+
+    .row-footer{
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+
+}
+
+.about-footer{
+
+}
+
+.menu-footer{
+    display: flex;
+
+    .list-footer{
+        padding: $spacing;
+    }
+}
+
+#bg-footer img {
+    width: 100%;
+}

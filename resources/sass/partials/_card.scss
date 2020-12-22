@@ -1,0 +1,42 @@
+#products{
+    background-image: image("../../public/images/bg-main.jpg ");
+}
+
+
+
+.box-card{
+    @include flex-center;
+    flex-wrap: wrap;
+    margin: 5px;
+
+    .card{
+        width: calc( 100% / 3 );
+        position: relative;
+
+        img{
+            max-width: 100%;
+        }
+
+        .over{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &:hover .over{
+            display: block;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
