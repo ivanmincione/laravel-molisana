@@ -5,18 +5,21 @@
 @section("content")
     <section id="products">
         <div class="container">
-            <h1>Lista dei prodotti</h1>
-
-            <div class="box-card">
-                @foreach ($typePasta as $pasta)
-                    <div class="card">
-                        <img src=" {{ $pasta["src"] }}" alt=" {{ $pasta["titolo"] }}">
-                        <div class="over">
-                            <a href="#"> {{ $pasta["titolo"] }} </a>
+            @foreach ($formati as $tipo => $pasta)
+                <h1 class="titolo-tipo">{{ $tipo }}</h1>
+                <div class="box-card">
+                    @foreach ($pasta as $indice => $formato)
+                        <div class="card">
+                            <img src="{{ $formato['src'] }}" alt="{{ $formato['titolo'] }}">
+                            <div class="over">
+                                <a href="{{ route('pagina-dettaglio', ['id' => $indice]) }}">
+                                    {{ $formato['titolo'] }}
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
+            @endforeach
         </div>
     </section>
 

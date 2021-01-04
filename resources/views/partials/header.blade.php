@@ -4,15 +4,27 @@
     </div>
     <div class="menu-header">
         <ul>
-            <li>
-                <a href=" {{url("/")}} ">HOME</a> {{-- si usa url perchè non è definito il nome --}}
-            </li>
-            <li>
-                <a href=" {{route("page-products")}} ">PRODOTTI</a>
-            </li>
-            <li>
-                <a href=" {{route("page-news")}} ">NEWS</a>
-            </li>
-        </ul>
+                <li>
+                    <a
+                        class="{{ Request::route()->getName() == 'home-page' ? 'active' : '' }}"
+                        href="{{ route('home-page') }}">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="{{ Request::route()->getName() == 'page-products' ? 'active' : '' }}"
+                        href="{{ route('page-products') }}">
+                        Prodotti
+                    </a>
+                </li>
+                <li>
+                    <a
+                        class="{{ Request::route()->getName() == 'page-news' ? 'active' : '' }}"
+                        href="{{ route('page-news') }}">
+                        News
+                    </a>
+                </li>
+            </ul>
     </div>
 </header>

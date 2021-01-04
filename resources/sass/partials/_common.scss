@@ -27,3 +27,32 @@ a{
     text-decoration: none;
     color: $fontColor;
 }
+
+img {
+    max-width: 100%;
+}
+
+.header-prodotto img, .pacco-pasta img {
+    display: block;
+}
+
+.titolo-prodotto {
+    text-align: center;
+    padding: $spacing / 2 0;
+}
+
+.descrizione {
+    padding: $spacing 0;
+    background-color: aliceblue;
+    line-height: 1.5;
+}
+
+.info {
+    display: flex;
+    padding: $spacing / 2 0;
+
+    .info-box {
+        flex-grow: 1;
+        text-align: center;
+    }
+}

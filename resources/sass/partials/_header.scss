@@ -17,7 +17,7 @@ header{
                     font-weight: bold;
                     font-size: $fontSize;
 
-                    &:hover{
+                    &:hover, &.active {
                         background-color: #B3E5FC;
                     }
                 }

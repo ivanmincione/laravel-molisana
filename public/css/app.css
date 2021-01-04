@@ -27,33 +27,56 @@ a {
   color: black;
 }
 
+img {
+  max-width: 100%;
+}
+
+.header-prodotto img, .pacco-pasta img {
+  display: block;
+}
+
+.titolo-prodotto {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.descrizione {
+  padding: 20px 0;
+  background-color: aliceblue;
+  line-height: 1.5;
+}
+
+.info {
+  display: flex;
+  padding: 10px 0;
+}
+.info .info-box {
+  flex-grow: 1;
+  text-align: center;
+}
+
 header {
   text-align: center;
   padding-top: 40px;
   margin-bottom: 20px;
 }
-
 header .menu-header {
   margin-top: 40px;
 }
-
 header .menu-header ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 header .menu-header ul li {
   padding: 0 20px;
 }
-
 header .menu-header ul li a {
   padding: 20px;
   font-weight: bold;
   font-size: 18px;
 }
-
-header .menu-header ul li a:hover {
+header .menu-header ul li a:hover, header .menu-header ul li a.active {
   background-color: #B3E5FC;
 }
 
@@ -68,16 +91,13 @@ header .menu-header ul li a:hover {
   flex-wrap: wrap;
   margin: 5px;
 }
-
 .box-card .card {
   width: calc( 100% / 3 );
   position: relative;
 }
-
 .box-card .card img {
   max-width: 100%;
 }
-
 .box-card .card .over {
   display: none;
   position: absolute;
@@ -86,7 +106,6 @@ header .menu-header ul li a:hover {
   width: 100%;
   height: 100%;
 }
-
 .box-card .card .over a {
   display: flex;
   justify-content: center;
@@ -94,7 +113,6 @@ header .menu-header ul li a:hover {
   width: 100%;
   height: 100%;
 }
-
 .box-card .card:hover .over {
   display: block;
   background-color: rgba(255, 255, 255, 0.5);
@@ -103,7 +121,6 @@ header .menu-header ul li a:hover {
 footer {
   margin-top: 40px;
 }
-
 footer .row-footer {
   display: flex;
   justify-content: space-around;
@@ -112,7 +129,6 @@ footer .row-footer {
 .menu-footer {
   display: flex;
 }
-
 .menu-footer .list-footer {
   padding: 20px;
 }
@@ -120,4 +136,3 @@ footer .row-footer {
 #bg-footer img {
   width: 100%;
 }
-
